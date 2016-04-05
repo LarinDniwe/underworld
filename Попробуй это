@@ -1,0 +1,7 @@
+function PR(Const a : string) : string;
+  begin
+    SetLength(result, length(a));
+    CharToOem(PChar(a), Pchar(result));
+  end;
+  
+   result:=PR('Print Rashen text');
